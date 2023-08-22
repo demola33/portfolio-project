@@ -1,0 +1,155 @@
+
+$box-border-radius: 30px;
+$primary-color: var(--bs-primary);
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.hero-content-left {
+  width: 100%;
+}
+
+.man {
+  left: -20px;
+  width: 20rem;
+  height: 100%;
+}
+
+.section-title {
+  color: $primary-color;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.section-subtitle {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Define underlineType mixin for t */
+@mixin threeCurvedBorderedBox() {
+  border-top-left-radius: $box-border-radius;
+  border-top-right-radius: $box-border-radius;
+  border-bottom-left-radius: $box-border-radius;
+}
+
+.box {
+  width: 90px;
+  height: 90px;
+  @include threeCurvedBorderedBox();
+}
+
+.hire-me-box {
+  width: 100%;
+  padding: 40px;
+  border-radius: 15px;
+  background-color: $primary-color;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 10rem;
+  @include threeCurvedBorderedBox();
+}
+
+.testimonial-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.testimonial-job {
+  font-size: 12px;
+}
+
+.testimonial-author {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%; 
+
+}
+
+.socials {
+  height: 200px;
+  width: 30px;
+  border-radius: $box-border-radius;
+  position: fixed;
+  top: 165px;
+  left: 20px;
+}
+
+
+.hero-content-right {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+ 
+  &::before {
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 100%;
+    background: var(--bs-dark);
+    top: 0;
+    left: 0;
+    clip-path: polygon(0% 0%,100% 100%,0% 100%);
+  }
+}
+
+header h4 {
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+/* Define underlineType mixin with three arguments */
+@mixin underlineType($type, $width, $color) {
+  border: none;
+  border-top: 4px $type $color;
+  color: $primary-color;
+  text-align: center;
+  height: 5px;
+  width: $width;
+}
+
+.custom-underline {
+  @include underlineType(solid, 30px, $primary-color);
+}
+
+.custom-dashed-underline {
+  @include underlineType(dashed, 30px, $primary-color);
+}
+
+.vertical {
+  border-left: 6px solid $primary-color;
+  height: 140px;
+  position: absolute;
+  left: 50%;
+  margin: 0;
+}
+
+
+@media (max-width: 1000px) {
+  #navbar-button {
+      background-color: $primary-color;
+  }
+
+  .sect .image-container {
+    display: flex;
+    justify-content: center;
+  }
+}
