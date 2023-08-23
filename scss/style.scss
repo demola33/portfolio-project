@@ -1,9 +1,9 @@
 
 $box-border-radius: 30px;
 $primary-color: var(--bs-primary);
-$primary-color: var(--bs-primary);
 $secondary-color: var(--bs-secondary);
 $light-color: var(--bs-light);
+$dark-color: var(--bs-dark);
 
 
 
@@ -16,8 +16,8 @@ $light-color: var(--bs-light);
 
 .hero-content-left {
   width: 100%;
-  padding: 0;
   padding-left: 6rem;
+  background-color: $dark-color;
 }
 
 .hero-content-right {
@@ -31,7 +31,7 @@ $light-color: var(--bs-light);
     position: absolute;
     content: '';
     width: 150px;
-    height: 50%;
+    height: 100%;
     // background: var(--bs-dark);
     top: 0;
     left: 0;
