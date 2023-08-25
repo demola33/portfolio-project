@@ -47,27 +47,18 @@ $dark-color: var(--bs-dark);
       height: 100%;
       background: $dark-color;
       top: 0;
-      left: 0;
-      clip-path: polygon(0% 0%,100% 100%,0% 100%);
+      left: -1px;
+      clip-path: polygon(0.1% 0%,100% 100%,0% 100%);
     };
     };
     
     &__img {
       position: absolute;
       bottom: 0;
-      left: 50%;
-      width: 30rem;
+      left: 45%;
+      width: 45%;
     }
   };
-}
-
-
-
-
-.man {
-  left: -20px;
-  width: 20rem;
-  height: 100%;
 }
 
 .section-title {
