@@ -46,13 +46,18 @@ $dark-color: var(--bs-dark);
       width: 150px;
       height: 100%;
       background: $dark-color;
-      // var(--bs-dark);
       top: 0;
       left: 0;
       clip-path: polygon(0% 0%,100% 100%,0% 100%);
     };
     };
     
+    &__img {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 30rem;
+    }
   };
 }
 
