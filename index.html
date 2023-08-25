@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
@@ -19,12 +20,12 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/lightbox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Portfolio</title>
+    <title>Akanmu Ademola | Portfolio</title>
   </head>
   <body>
     <!-- Navigation -->
-    <nav id="nav" class="navbar navbar-expand-lg fixed-top navbar-dark">
-      <div class="container-xxl px-0 px-6">
+    <nav id="nav" class="navbar navbar-expand-xl fixed-top navbar-dark">
+      <div class="container">
         <a href="index.html" class="navbar-brand">
           <h6 class="navbar-text text-black fw-bold">
             Desig<span class="text-primary">ner.</span>
@@ -67,38 +68,27 @@
 
     <!-- Header -->
     <header class="header">
-      <!-- Hero -->
-      <div class="hero vh-100">
-        <div class="container-xxl px-0">
-          <div class="row g-0">
-            <div class="col-md-12 col-lg-6">
-              <div class="hero-content-left">
-                <div
-                  class="d-flex flex-column justify-content-center vstack gap-1 vh-100"
-                >
-                  <h4 class="h5 fw-semibold text-primary">Hello I'm</h4>
-                  <div class="display-6 fw-bold font-monospace">
-                    Akanmu Ademola
-                  </div>
-                  <p class="fw-semibold text-muted">
-                    Professional Mobile & Web Developer
-                  </p>
-                  <p class="text-secondary">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Unde, molestias rem iusto explicabo assumenda aspernatur
-                    illo minima neque dignissimos libero autem esse, maxime
-                    veritatis quos culpa voluptas atque repellendus nostrum
-                  </p>
-                  <button class="btn btn-primary align-self-start text-white">
-                    Hire me
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 d-none d-lg-block">
-              <div class="hero-content-right"></div>
+      <div class="container vh-100">
+        <div class="header__hero">
+          <div class="header__hero__content__left">
+            <div class="text-container">
+              <h4 class="h5 fw-semibold text-primary">Hello I'm</h4>
+              <div class="display-6 fw-bold font-monospace">Akanmu Ademola</div>
+              <p class="fw-semibold text-muted">
+                Professional Mobile & Web Developer
+              </p>
+              <p class="text-secondary">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
+                molestias rem iusto explicabo assumenda aspernatur illo minima
+                neque dignissimos libero autem esse, maxime veritatis quos culpa
+                voluptas atque repellendus nostrum
+              </p>
+              <button class="btn btn-primary align-self-start text-white">
+                Hire me
+              </button>
             </div>
           </div>
+          <div class="header__hero__content__right d-none d-lg-block"></div>
         </div>
       </div>
     </header>
@@ -120,9 +110,9 @@
     </aside>
 
     <!-- About us -->
-    <section id="about-us" class="sect">
-      <div class="container-xxl bg-light px-0">
-        <div class="row gap-5 px-6 pt-7">
+    <section id="about-us" class="sect py-6">
+      <div class="container">
+        <div class="row gap-5">
           <div class="col-md-4">
             <div class="image-container rounded">
               <img
@@ -212,9 +202,9 @@
     </section>
 
     <!-- Service Provided -->
-    <section id="services">
-      <div class="container-xxl bg-light px-0">
-        <div class="pt-7 px-6">
+    <section id="services" class="py-6">
+      <div class="container">
+        <div>
           <div class="text-center">
             <h6 class="section-title lead">Service</h6>
             <div>
@@ -227,17 +217,15 @@
           </div>
           <br />
 
-          <div class="row g-5">
+          <div class="row">
             <div class="col-md-4">
-              <div class="card service-card mb-4 border-0 shadow-sm">
+              <div class="card service-card border-0 shadow-sm">
                 <div class="card-body p-4">
                   <div class="d-flex flex-column gap-3">
                     <div
                       class="box d-flex flex-column justify-content-center align-item-center"
                     >
-                      <i
-                        class="fa-regular text-center text-light fa-fill-drip fa-2x"
-                      ></i>
+                      <i class="fa-regular fa-fill-drip"></i>
                     </div>
                     <p class="fw-semibold">Graphic Design</p>
                     <p>
@@ -250,15 +238,13 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card service-card mb-4 border-0 shadow-sm">
+              <div class="card service-card border-0 shadow-sm">
                 <div class="card-body p-4">
                   <div class="d-flex flex-column gap-3">
                     <div
                       class="box d-flex flex-column justify-content-center align-item-center"
                     >
-                      <i
-                        class="fa-solid fa-palette text-light text-center fa-2xl"
-                      ></i>
+                      <i class="fa-solid fa-palette"></i>
                     </div>
                     <p class="fw-semibold">Web Design</p>
                     <p>
@@ -271,15 +257,13 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card service-card mb-4 border-0 shadow-sm">
+              <div class="card service-card border-0 shadow-sm">
                 <div class="card-body p-4">
                   <div class="d-flex flex-column gap-3">
                     <div
                       class="box d-flex flex-column justify-content-center align-item-center"
                     >
-                      <i
-                        class="fa-solid fa-desktop text-light text-center fa-2xl"
-                      ></i>
+                      <i class="fa-solid fa-desktop"></i>
                     </div>
                     <p class="fw-semibold">UI/UX</p>
                     <p>
@@ -292,15 +276,13 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card service-card mb-4 border-0 shadow-sm">
+              <div class="card service-card border-0 shadow-sm">
                 <div class="card-body p-4">
                   <div class="d-flex flex-column gap-3">
                     <div
                       class="box d-flex flex-column justify-content-center align-item-center"
                     >
-                      <i
-                        class="fa-brands fa-html5 fa-2xl text-light text-center"
-                      ></i>
+                      <i class="fa-brands fa-html5"></i>
                     </div>
                     <p class="fw-semibold">HTML</p>
                     <p>
@@ -313,15 +295,13 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card service-card mb-4 border-0 shadow-sm">
+              <div class="card service-card border-0 shadow-sm">
                 <div class="card-body p-4">
                   <div class="d-flex flex-column gap-3">
                     <div
                       class="box d-flex flex-column justify-content-center align-item-center"
                     >
-                      <i
-                        class="fa-brands fa-css3-alt fa-2xl text-light text-center"
-                      ></i>
+                      <i class="fa-brands fa-css3-alt"></i>
                     </div>
                     <p class="fw-semibold">CSS</p>
                     <p>
@@ -334,15 +314,13 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card service-card mb-4 border-0 shadow-sm">
+              <div class="card service-card border-0 shadow-sm">
                 <div class="card-body p-4">
                   <div class="d-flex flex-column gap-3">
                     <div
                       class="box d-flex flex-column justify-content-center align-item-center"
                     >
-                      <i
-                        class="fa-solid fa-bullhorn text-light text-center fa-2xl"
-                      ></i>
+                      <i class="fa-solid fa-bullhorn"></i>
                     </div>
                     <p class="fw-semibold">SEO Marketing</p>
                     <p>
@@ -360,9 +338,9 @@
     </section>
 
     <!-- Projects -->
-    <section id="portfolio">
-      <div class="container-xxl bg-light px-0">
-        <div class="px-6 pt-7">
+    <section id="portfolio" class="py-6">
+      <div class="container">
+        <div>
           <div class="text-start">
             <h6 class="section-title lead">Portfolio</h6>
             <div class="d-flex gap-2 justify-content-between">
@@ -402,7 +380,7 @@
             </div>
           </div>
           <br />
-          <div class="row g-5">
+          <div class="row g-3">
             <div class="col-md-4">
               <div class="card border-0 mb-2 rounded">
                 <a
@@ -465,7 +443,7 @@
             </div>
           </div>
 
-          <div class="d-flex gap-2 justify-content-center pt-5 pb-7">
+          <div class="d-flex gap-2 justify-content-center pt-4">
             <i class="fa-solid fa-arrow-left-long fa-xl text-primary"></i>
             <i class="fa-solid fa-arrow-right-long fa-xl"></i>
           </div>
@@ -474,9 +452,9 @@
     </section>
 
     <!-- Pricing -->
-    <section id="pricing">
-      <div class="container-xxl bg-dark px-0">
-        <div class="px-6 py-7">
+    <section id="pricing" class="py-6">
+      <div class="container">
+        <div>
           <div class="text-center">
             <h6 class="section-title lead">Pricing</h6>
             <div>
@@ -491,9 +469,9 @@
           </div>
           <br />
 
-          <div class="row g-5">
+          <div class="row g-3">
             <div class="col-md-4">
-              <div class="card mb-4 border-0 shadow-sm">
+              <div class="card border-0 shadow-sm">
                 <div class="card-body p-4">
                   <div>
                     <h4 class="section-subtitle display-6 fs-3 mb-0 text-muted">
@@ -522,7 +500,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card mb-4 border-0 shadow-sm bg-light">
+              <div class="card border-0 shadow-sm bg-light">
                 <div class="card-body p-4">
                   <div>
                     <h4 class="section-subtitle display-6 fs-3 mb-0 text-muted">
@@ -553,13 +531,15 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card mb-4 border-0 shadow-sm bg-light">
+              <div class="card border-0 shadow-sm bg-light">
                 <div class="card-body p-4">
                   <div>
                     <h4 class="section-subtitle display-6 fs-3 mb-0 text-muted">
                       Premium
                     </h4>
-                    <h2 class="fw-semibold mt-3 mb-0 text-primary">$350</h2>
+                    <h2 class="fs-3 fw-semibold mt-3 mb-0 text-primary">
+                      $350
+                    </h2>
                     <p class="text-muted">Complete Service</p>
                     <hr />
                   </div>
@@ -587,9 +567,9 @@
     </section>
 
     <!-- Testmonials -->
-    <section id="testmonial">
-      <div class="container-xxl bg-light px-0">
-        <div class="px-6 py-6">
+    <section id="testmonial" class="py-6">
+      <div class="container">
+        <div>
           <div class="text-center">
             <h6 class="section-title lead">Testmonial</h6>
             <div>
@@ -638,7 +618,7 @@
                           <img
                             src="images/maria.jpg"
                             class="img-fluid"
-                            alt=""
+                            alt="Maria headshot image"
                           />
                         </div>
                         <div class="ms-3">
@@ -691,7 +671,7 @@
                           <img
                             src="images/maria.jpg"
                             class="img-fluid"
-                            alt=""
+                            alt="Maria headshot image"
                           />
                         </div>
                         <div class="ms-3">
@@ -748,7 +728,7 @@
                           <img
                             src="images/maria.jpg"
                             class="img-fluid"
-                            alt=""
+                            alt="Maria headshot image"
                           />
                         </div>
                         <div class="ms-3">
@@ -801,7 +781,7 @@
                           <img
                             src="images/maria.jpg"
                             class="img-fluid"
-                            alt=""
+                            alt="Maria headshot image"
                           />
                         </div>
                         <div class="ms-3">
@@ -859,7 +839,7 @@
                           <img
                             src="images/maria.jpg"
                             class="img-fluid"
-                            alt=""
+                            alt="Maria headshot image"
                           />
                         </div>
                         <div class="ms-3">
@@ -912,7 +892,7 @@
                           <img
                             src="images/maria.jpg"
                             class="img-fluid"
-                            alt=""
+                            alt="Maria headshot image"
                           />
                         </div>
                         <div class="ms-3">
@@ -968,10 +948,10 @@
     </section>
 
     <!-- Stats -->
-    <section id="stats">
-      <div class="container-xxl bg-dark px-0">
-        <div class="row g-5 px-6 py-5">
-          <div class="col-lg-3 col-md-6 m-0">
+    <section id="stats" class="bg-dark py-4">
+      <div class="container py-2">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
             <div class="d-flex gap-3 align-items-center">
               <div>
                 <i class="fa-regular fa-circle-check"></i>
@@ -982,7 +962,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 m-0">
+          <div class="col-lg-3 col-md-6">
             <div class="d-flex gap-3 align-items-center">
               <div>
                 <i class="fa-regular fa-user-group"></i>
@@ -993,7 +973,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 m-0">
+          <div class="col-lg-3 col-md-6">
             <div class="d-flex gap-3 align-items-center">
               <div>
                 <i class="fa-regular fa-shield"></i>
@@ -1004,7 +984,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 m-0">
+          <div class="col-lg-3 col-md-6">
             <div class="d-flex gap-3 align-items-center">
               <div>
                 <i class="fa-regular fa-handshake"></i>
@@ -1020,9 +1000,9 @@
     </section>
 
     <!-- Experience -->
-    <section id="experience">
-      <div class="container-xxl bg-light px-0">
-        <div class="px-6 py-5">
+    <section id="experience" class="py-6">
+      <div class="container">
+        <div>
           <div class="text-center">
             <h6 class="section-title lead">Experience</h6>
             <div>
@@ -1110,7 +1090,6 @@
               </div>
             </div>
           </div>
-
           <div class="hire-me-box bg">
             <div class="row g-2">
               <div class="col-md-8">
@@ -1141,53 +1120,62 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="container bg-dark py-6">
-        <div
-          class="d-flex flex-column justify-content-center align-items-center"
-        >
-          <h6 class="navbar-text text-black fw-bold">
-            Desig<span class="text-primary">ner.</span>
-          </h6>
-          <div class="d-flex my-3">
-            <i
-              class="fa-brands fa-github bg-secondary text-white rounded-circle p-3 me-4"
-            ></i>
-            <i
-              class="fa-brands fa-square-x-twitter bg-secondary text-white rounded-circle p-3 me-4"
-            ></i>
-            <i
-              class="fa-brands fa-instagram bg-secondary text-white rounded-circle p-3 me-4"
-            ></i>
-            <i
-              class="fa-brands fa-linkedin-in text-white bg-secondary rounded-circle p-3 me-4"
-            ></i>
+    <!-- Socials -->
+    <div class="socials2 bg-dark pt-4 pb-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3 text-center">
+            <h5 class="navbar-text text-black fw-bold">
+              Desig<span class="text-primary">ner.</span>
+            </h5>
+            <div class="d-flex py-3 justify-content-center gap-3">
+              <i
+                class="fa-brands fa-github bg-secondary text-white rounded-circle p-3"
+              ></i>
+              <i
+                class="fa-brands fa-square-x-twitter bg-secondary text-white rounded-circle p-3"
+              ></i>
+              <i
+                class="fa-brands fa-instagram bg-secondary text-white rounded-circle p-3"
+              ></i>
+              <i
+                class="fa-brands fa-linkedin-in text-white bg-secondary rounded-circle p-3"
+              ></i>
+            </div>
+            <h5 class="display-6 fs-4 fw-semibold">
+              aakanmu@lighthaus-eko.com
+            </h5>
           </div>
-          <h5 class="display-6 fs-4 fw-semibold">aakanmu@lighthaus-eko.com</h5>
-          <ul class="nav d-flex justify-content-center">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about-us" class="nav-link">About us</a>
-            </li>
-            <li class="nav-item">
-              <a href="#services" class="nav-link">Service</a>
-            </li>
-            <li class="nav-item">
-              <a href="#portfolio" class="nav-link">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#pricing" class="nav-link">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Contact Us</a>
-            </li>
-          </ul>
-          <p class="text-muted">
-            Copyright &copy; 2023 | Desgned by Ademola Akanmu
-          </p>
         </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer border-top bg-dark pt-2 pb-2">
+      <div class="container text-center">
+        <ul class="nav d-flex justify-content-center">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about-us" class="nav-link">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">Service</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#pricing" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+        <p class="text-muted">
+          Copyright &copy; 2023 | Designed by Ademola Akanmu
+        </p>
       </div>
     </footer>
 
