@@ -210,6 +210,12 @@ footer p {
   transition: all 0.5s ease-in-out;
 }
 
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px;
+}
+
 .navbar-sticky {
   opacity: 0.9;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
