@@ -80,11 +80,17 @@ $dark-color: var(--bs-dark);
 }
 
 .box {
+  @include threeCurvedBorderedBox();
   width: 90px;
   height: 90px;
   background-color: $primary-color;
-  @include threeCurvedBorderedBox();
+  color: $light-color;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .hire-me-box {
   width: 100%;
@@ -105,9 +111,14 @@ $dark-color: var(--bs-dark);
   color: $secondary-color;
 }
 
-.service-card:hover {
+.service-card:hover  {
   background-color: $primary-color;
   color: #fff;
+
+  .box {
+    background-color: $light-color;
+    color: $primary-color;
+  }
 }
 
 .btn-light {
@@ -159,14 +170,6 @@ $dark-color: var(--bs-dark);
 header h4 {
   letter-spacing: 2px;
   word-spacing: 5px;
-}
-
-#services i {
-  font-size: 30px;
-  color: $light-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #stats i {
