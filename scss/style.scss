@@ -193,10 +193,12 @@ footer p {
 
 .custom-underline {
   @include underlineType(solid, 30px, $primary-color);
+  opacity: 1.0;
 }
 
 .custom-dashed-underline {
   @include underlineType(dashed, 30px, $primary-color);
+  opacity: 1.0;
 }
 
 .vertical {
