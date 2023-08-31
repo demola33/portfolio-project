@@ -70,7 +70,7 @@
     <header class="header">
       <div class="container vh-100">
         <div class="header__hero">
-          <div class="header__hero__content__left">
+          <div class="header__hero header__content header--left">
             <div class="text-container">
               <h4 class="h5 fw-semibold text-primary">Hello I'm</h4>
               <div class="display-6 fw-bold font-monospace">Akanmu Ademola</div>
@@ -81,8 +81,8 @@
                 Akanmu Ademola is a passionate and innovative Web and Mobile
                 developer with a strong flair for crafting elegant and
                 functional digital solutions. With a solid foundation in
-                computer science and design principles, Ademola has dedicated their
-                career to pushing the boundaries of user experience and
+                computer science and design principles, Ademola has dedicated
+                their career to pushing the boundaries of user experience and
                 interactivity.
                 <br />
               </p>
@@ -91,8 +91,8 @@
               </button>
             </div>
           </div>
-          <div class="header__hero__content__right d-none d-lg-block"></div>
-          <div class="header__hero__img image-container d-none d-lg-block">
+          <div class="header__hero header__content header--right"></div>
+          <div class="header__img image-container">
             <img src="images/ademola.png" class="img-fluid" alt="" />
           </div>
         </div>
@@ -100,8 +100,8 @@
     </header>
 
     <!-- Aside -->
-    <aside class="socials d-flex bg-dark border py-3 ps-2">
-      <div class="d-flex flex-column justify-content-between align-item-center">
+    <aside class="socials py-3">
+      <div class="socials__content">
         <a href="https://github.com/demola33" target="_blank">
           <i class="fa-brands fa-github text-black"></i
         ></a>
@@ -116,38 +116,38 @@
     </aside>
 
     <!-- About us -->
-    <section id="about-us" class="sect py-6">
-      <div class="container">
-        <div class="row gap-5">
+    <section id="about-us" class="about-us">
+      <div class="container text-center">
+        <div class="row gap-3">
           <div class="col-md-4">
             <div class="image-container rounded">
               <img
                 src="images/ademola.png"
-                class="img-fluid border rounded shadow-lg"
+                class="img-fluid border rounded shadow-sm"
                 alt=""
               />
             </div>
           </div>
-          <div class="col md-8">
-            <div
-              class="text-container d-flex flex-column justify-content-center h-100"
-            >
-              <h6 class="section-title lead">About Us</h6>
-              <p class="section-subtitle display-6 mb-0">why you hire me!</p>
-              <div class="d-flex">
+          <div class="col md-7">
+            <header class="text-start">
+              <h6 class="about-us__title">About Us</h6>
+              <p class="about-us__subtitle display-6">why you hire me!</p>
+              <div class="merged-underline">
                 <hr class="custom-underline" />
                 <hr class="custom-dashed-underline" />
               </div>
-              <br />
+            </header>
+
+            <div class="text-container text-start">
               <p class="text-secondary">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
                 molestias rem iusto explicabo assumenda aspernatur illo minima
                 neque dignissimos libero autem esse, maxime veritatis quos culpa
                 voluptas atque repellendus nostrum
               </p>
-              <div class="d-flex justify-content-between mt-5">
-                <h6 class="fw-medium">Flutter/Dart</h6>
-                <h6 class="fw-medium">80%</h6>
+              <div class="about-us__skill-text mt-5">
+                <h6>Flutter/Dart</h6>
+                <h6>80%</h6>
               </div>
               <div
                 class="progress mb-4"
@@ -159,9 +159,9 @@
               >
                 <div class="progress-bar" style="width: 80%"></div>
               </div>
-              <div class="d-flex justify-content-between">
-                <h6 class="fw-medium">HTML, CSS & Javascript</h6>
-                <h6 class="fw-medium">60%</h6>
+              <div class="about-us__skill-text">
+                <h6>HTML, CSS & Javascript</h6>
+                <h6>60%</h6>
               </div>
               <div
                 class="progress mb-4"
@@ -173,9 +173,9 @@
               >
                 <div class="progress-bar" style="width: 60%"></div>
               </div>
-              <div class="d-flex justify-content-between">
-                <h6 class="fw-medium">Google Firebase</h6>
-                <h6 class="fw-medium">70%</h6>
+              <div class="about-us__skill-text">
+                <h6>Google Firebase</h6>
+                <h6>70%</h6>
               </div>
               <div
                 class="progress mb-4"
@@ -187,9 +187,9 @@
               >
                 <div class="progress-bar" style="width: 70%"></div>
               </div>
-              <div class="d-flex justify-content-between">
-                <h6 class="fw-medium">Bootstrap</h6>
-                <h6 class="fw-medium">50%</h6>
+              <div class="about-us__skill-text">
+                <h6>Bootstrap</h6>
+                <h6>50%</h6>
               </div>
               <div
                 class="progress"
@@ -208,133 +208,122 @@
     </section>
 
     <!-- Service Provided -->
-    <section id="services" class="py-6">
-      <div class="container">
-        <div>
-          <div class="text-center">
-            <h6 class="section-title lead">Service</h6>
-            <div>
-              <p class="section-subtitle display-6 mb-0">Services We Provide</p>
-              <div class="d-flex justify-content-center">
+    <section id="services" class="services">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <header>
+              <h6 class="services__title">Service</h6>
+              <p class="services__subtitle display-6">Services We Provide</p>
+              <div class="merged-center-underline">
                 <hr class="custom-underline" />
                 <hr class="custom-dashed-underline" />
               </div>
+            </header>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="card services__card">
+              <div class="card-body">
+                <div class="services__content">
+                  <div class="box">
+                    <i class="fa-regular fa-fill-drip"></i>
+                  </div>
+                  <p class="services__card-title">Graphic Design</p>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Unde, molestias rem iusto explicabo assumenda aspernatur
+                    illo minima
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <br />
-
-          <div class="row g-3">
-            <div class="col-md-4">
-              <div class="card service-card border-0 shadow-sm">
-                <div class="card-body p-4">
-                  <div class="d-flex flex-column gap-3">
-                    <div
-                      class="box d-flex flex-column justify-content-center align-item-center"
-                    >
-                      <i class="fa-regular fa-fill-drip"></i>
-                    </div>
-                    <p class="fw-semibold">Graphic Design</p>
-                    <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Unde, molestias rem iusto explicabo assumenda aspernatur
-                      illo minima
-                    </p>
+          <div class="col-md-4">
+            <div class="card services__card">
+              <div class="card-body">
+                <div class="services__content">
+                  <div class="box">
+                    <i class="fa-solid fa-palette"></i>
                   </div>
+                  <p class="services__card-title">Web Design</p>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Unde, molestias rem iusto explicabo assumenda aspernatur
+                    illo minima
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card service-card border-0 shadow-sm">
-                <div class="card-body p-4">
-                  <div class="d-flex flex-column gap-3">
-                    <div
-                      class="box d-flex flex-column justify-content-center align-item-center"
-                    >
-                      <i class="fa-solid fa-palette"></i>
-                    </div>
-                    <p class="fw-semibold">Web Design</p>
-                    <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Unde, molestias rem iusto explicabo assumenda aspernatur
-                      illo minima
-                    </p>
+          </div>
+          <div class="col-md-4">
+            <div class="card services__card">
+              <div class="card-body">
+                <div class="services__content">
+                  <div class="box">
+                    <i class="fa-solid fa-desktop"></i>
                   </div>
+                  <p class="services__card-title">UI/UX</p>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Unde, molestias rem iusto explicabo assumenda aspernatur
+                    illo minima
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card service-card border-0 shadow-sm">
-                <div class="card-body p-4">
-                  <div class="d-flex flex-column gap-3">
-                    <div
-                      class="box d-flex flex-column justify-content-center align-item-center"
-                    >
-                      <i class="fa-solid fa-desktop"></i>
-                    </div>
-                    <p class="fw-semibold">UI/UX</p>
-                    <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Unde, molestias rem iusto explicabo assumenda aspernatur
-                      illo minima
-                    </p>
+          </div>
+          <div class="col-md-4">
+            <div class="card services__card">
+              <div class="card-body">
+                <div class="services__content">
+                  <div class="box">
+                    <i class="fa-brands fa-html5"></i>
                   </div>
+                  <p class="services__card-title">HTML</p>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Unde, molestias rem iusto explicabo assumenda aspernatur
+                    illo minima
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card service-card border-0 shadow-sm">
-                <div class="card-body p-4">
-                  <div class="d-flex flex-column gap-3">
-                    <div
-                      class="box d-flex flex-column justify-content-center align-item-center"
-                    >
-                      <i class="fa-brands fa-html5"></i>
-                    </div>
-                    <p class="fw-semibold">HTML</p>
-                    <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Unde, molestias rem iusto explicabo assumenda aspernatur
-                      illo minima
-                    </p>
+          </div>
+          <div class="col-md-4">
+            <div class="card services__card">
+              <div class="card-body">
+                <div class="services__content">
+                  <div class="box">
+                    <i class="fa-brands fa-css3-alt"></i>
                   </div>
+                  <p class="services__card-title">CSS</p>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Unde, molestias rem iusto explicabo assumenda aspernatur
+                    illo minima
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card service-card border-0 shadow-sm">
-                <div class="card-body p-4">
-                  <div class="d-flex flex-column gap-3">
-                    <div
-                      class="box d-flex flex-column justify-content-center align-item-center"
-                    >
-                      <i class="fa-brands fa-css3-alt"></i>
-                    </div>
-                    <p class="fw-semibold">CSS</p>
-                    <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Unde, molestias rem iusto explicabo assumenda aspernatur
-                      illo minima
-                    </p>
+          </div>
+          <div class="col-md-4">
+            <div class="card services__card">
+              <div class="card-body">
+                <div class="services__content">
+                  <div class="box">
+                    <i class="fa-solid fa-bullhorn"></i>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card service-card border-0 shadow-sm">
-                <div class="card-body p-4">
-                  <div class="d-flex flex-column gap-3">
-                    <div
-                      class="box d-flex flex-column justify-content-center align-item-center"
-                    >
-                      <i class="fa-solid fa-bullhorn"></i>
-                    </div>
-                    <p class="fw-semibold">SEO Marketing</p>
-                    <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Unde, molestias rem iusto explicabo assumenda aspernatur
-                      illo minima
-                    </p>
-                  </div>
+                  <p class="services__card-title">SEO Marketing</p>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Unde, molestias rem iusto explicabo assumenda aspernatur
+                    illo minima
+                  </p>
                 </div>
               </div>
             </div>
@@ -344,15 +333,17 @@
     </section>
 
     <!-- Projects -->
-    <section id="portfolio" class="py-6">
-      <div class="container">
-        <div>
-          <div class="text-start">
-            <h6 class="section-title lead">Portfolio</h6>
-            <div class="d-flex gap-2 justify-content-between">
-              <div>
-                <p class="section-subtitle display-6 mb-0">Latest Project</p>
-                <div class="d-flex">
+    <section id="portfolio" class="portfolio">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <header
+              class="d-flex gap-2 justify-content-between align-items-center"
+            >
+              <div class="left-content">
+                <h6 class="portfolio__title text-start">Portfolio</h6>
+                <p class="portfolio__subtitle display-6">Latest Project</p>
+                <div class="merged-underline">
                   <hr class="custom-underline" />
                   <hr class="custom-dashed-underline" />
                 </div>
@@ -383,188 +374,186 @@
                   </li>
                 </ul>
               </div>
-            </div>
+            </header>
           </div>
-          <br />
-          <div class="row g-3">
-            <div class="col-md-4">
-              <div class="card border-0 mb-2 rounded">
-                <a
-                  href="https://cdn.dribbble.com/userupload/9213905/file/original-b9cd2eb2efd067568ee50c3167f8aa93.png?resize=1504x1128"
-                  data-lightbox="images"
-                  data-title="SEO Marketing"
-                >
-                  <img
-                    src="https://cdn.dribbble.com/userupload/9213905/file/original-b9cd2eb2efd067568ee50c3167f8aa93.png?resize=1504x1128"
-                    alt=""
-                    class="border border-0 rounded img-fluid"
-                  />
-                </a>
-              </div>
-              <div>
-                <p class="fw-semibold text-black mb-1">E-commerce App</p>
-                <p class="text-secondary">React Native</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-2 border-0 shadow-sm bg-light">
-                <a
-                  href="https://user-images.githubusercontent.com/75575159/174825389-43c9f3e6-a097-4bb9-aa77-65315ab6195b.png"
-                  data-lightbox="images"
-                  data-title="Gas-Refill Mobile App"
-                  class="h-20"
-                >
-                  <img
-                    src="https://user-images.githubusercontent.com/75575159/174825389-43c9f3e6-a097-4bb9-aa77-65315ab6195b.png"
-                    alt=""
-                    class="border border-0 rounded img-fluid h-20"
-                  />
-                </a>
-              </div>
-              <div>
-                <p class="fw-semibold text-black mb-1">Gas-Refill Mobile App</p>
-                <p class="text-secondary">Flutter/Dart</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card border-0 mb-2 rounded">
-                <a
-                  href="https://cdn.dribbble.com/userupload/9397159/file/original-12f7b422db45da1445f1915c4160754a.png?resize=1504x1128"
-                  data-lightbox="images"
-                  data-title="Smart Lighting System Landing page"
-                >
-                  <img
-                    src="https://cdn.dribbble.com/userupload/9397159/file/original-12f7b422db45da1445f1915c4160754a.png?resize=1504x1128"
-                    alt=""
-                    class="border border-0 rounded img-fluid"
-                  />
-                </a>
-              </div>
-              <div>
-                <p class="fw-semibold text-black mb-1">
-                  Smart Lighting System Landing page
-                </p>
-                <p class="text-secondary">UI/UX Design</p>
-              </div>
-            </div>
-          </div>
+        </div>
 
-          <div class="d-flex gap-2 justify-content-center pt-4">
-            <i class="fa-solid fa-arrow-left-long fa-xl text-primary"></i>
-            <i class="fa-solid fa-arrow-right-long fa-xl"></i>
+        <br />
+
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="card portfolio__card rounded">
+              <a
+                href="https://cdn.dribbble.com/userupload/9213905/file/original-b9cd2eb2efd067568ee50c3167f8aa93.png?resize=1504x1128"
+                data-lightbox="images"
+                data-title="E-commerce App"
+              >
+                <img
+                  src="https://cdn.dribbble.com/userupload/9213905/file/original-b9cd2eb2efd067568ee50c3167f8aa93.png?resize=1504x1128"
+                  alt=""
+                  class="portfolio__card rounded"
+                />
+              </a>
+            </div>
+            <div>
+              <p class="portfolio__card-title">E-commerce App</p>
+              <p class="portfolio__card-subtitle">React Native</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card portfolio__card rounded">
+              <a
+                href="https://user-images.githubusercontent.com/75575159/174825389-43c9f3e6-a097-4bb9-aa77-65315ab6195b.png"
+                data-lightbox="images"
+                data-title="Gas-Refill Mobile App"
+              >
+                <img
+                  src="https://user-images.githubusercontent.com/75575159/174825389-43c9f3e6-a097-4bb9-aa77-65315ab6195b.png"
+                  alt=""
+                  class="portfolio__card rounded"
+                />
+              </a>
+            </div>
+            <div>
+              <p class="portfolio__card-title">Gas-Refill Mobile App</p>
+              <p class="portfolio__card-subtitle">Flutter/Dart</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card portfolio__card rounded">
+              <a
+                href="https://cdn.dribbble.com/userupload/9397159/file/original-12f7b422db45da1445f1915c4160754a.png?resize=1504x1128"
+                data-lightbox="images"
+                data-title="Smart Lighting System Landing page"
+              >
+                <img
+                  src="https://cdn.dribbble.com/userupload/9397159/file/original-12f7b422db45da1445f1915c4160754a.png?resize=1504x1128"
+                  alt=""
+                  class="portfolio__card rounded"
+                />
+              </a>
+            </div>
+            <div>
+              <p class="portfolio__card-title">
+                Smart Lighting System Landing page
+              </p>
+              <p class="portfolio__card-subtitle">UI/UX Design</p>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="portfolio__arrow-button">
+              <i class="fa-solid fa-arrow-left-long fa-xl text-primary"></i>
+              <i class="fa-solid fa-arrow-right-long fa-xl"></i>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Pricing -->
-    <section id="pricing" class="py-6">
-      <div class="container">
-        <div>
-          <div class="text-center">
-            <h6 class="section-title lead">Pricing</h6>
-            <div>
-              <p class="section-subtitle display-6 mb-0">
+    <section id="pricing" class="pricing">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <header>
+              <h6 class="pricing__title">Pricing</h6>
+              <p class="pricing__subtitle display-6">
                 Flexible Pricing Options
               </p>
-              <div class="d-flex justify-content-center">
+              <div class="merged-center-underline">
                 <hr class="custom-underline" />
                 <hr class="custom-dashed-underline" />
               </div>
+            </header>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="card pricing__card">
+              <div class="card-body">
+                <div>
+                  <h4 class="pricing__card-title">Basic</h4>
+                  <h2 class="pricing__amount">$75</h2>
+                  <p class="pricing__card-subtitle">Only Psd Service</p>
+                  <hr />
+                </div>
+                <ul class="list-group list-group-flush fs-5 mb-3 vstack">
+                  <li class="list-group-item ps-0 border-0">
+                    <h6 class="bi bi-check2 text-muted">Graphic Design</h6>
+                  </li>
+                  <li class="list-group-item ps-0 border-0">
+                    <h6 class="bi bi-check2 text-muted">Web Design</h6>
+                  </li>
+                  <li class="list-group-item ps-0 border-0">
+                    <h6 class="bi bi-check2 text-muted">UI/UX</h6>
+                  </li>
+                  <li class="list-group-item ps-0 border-0">
+                    <h6 class="bi bi-check2 text-muted">SEO Marketing</h6>
+                  </li>
+                </ul>
+                <button class="btn btn-light">Choose Plan</button>
+              </div>
             </div>
           </div>
-          <br />
-
-          <div class="row g-3">
-            <div class="col-md-4">
-              <div class="card border-0 shadow-sm">
-                <div class="card-body p-4">
-                  <div>
-                    <h4 class="section-subtitle display-6 fs-3 mb-0 text-muted">
-                      Basic
-                    </h4>
-                    <h2 class="fs-3 fw-semibold mt-3 mb-0 text-primary">$75</h2>
-                    <p class="text-muted">Only Psd Service</p>
-                    <hr />
-                  </div>
-                  <ul class="list-group list-group-flush fs-5 mb-3 vstack">
-                    <li class="list-group-item ps-0 border-0">
-                      <h6 class="bi bi-check2 text-muted">Graphic Design</h6>
-                    </li>
-                    <li class="list-group-item ps-0 border-0">
-                      <h6 class="bi bi-check2 text-muted">Web Design</h6>
-                    </li>
-                    <li class="list-group-item ps-0 border-0">
-                      <h6 class="bi bi-check2 text-muted">UI/UX</h6>
-                    </li>
-                    <li class="list-group-item ps-0 border-0">
-                      <h6 class="bi bi-check2 text-muted">SEO Marketing</h6>
-                    </li>
-                  </ul>
-                  <button class="btn btn-light">Choose Plan</button>
+          <div class="col-md-4">
+            <div class="card pricing__card">
+              <div class="card-body">
+                <div>
+                  <h4 class="pricing__card-title">Standard</h4>
+                  <h2 class="pricing__amount">$250</h2>
+                  <p class="pricing__card-subtitle">Complete Service</p>
+                  <hr />
                 </div>
+                <ul class="list-group list-group-flush fs-5 mb-3 vstack">
+                  <li class="list-group-item ps-0 border-0">
+                    <h6 class="bi bi-check2 text-muted">Graphic Design</h6>
+                  </li>
+                  <li class="list-group-item ps-0 border-0">
+                    <h6 class="bi bi-check2 text-muted">Web Design</h6>
+                  </li>
+                  <li class="list-group-item ps-0 border-0">
+                    <h6 class="bi bi-check2 text-muted">UI/UX</h6>
+                  </li>
+                  <li class="list-group-item ps-0 border-0">
+                    <h6 class="bi bi-check2 text-muted">SEO Marketing</h6>
+                  </li>
+                </ul>
+                <button class="btn btn-light">Choose Plan</button>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card border-0 shadow-sm bg-light">
-                <div class="card-body p-4">
-                  <div>
-                    <h4 class="section-subtitle display-6 fs-3 mb-0 text-muted">
-                      Standard
-                    </h4>
-                    <h2 class="fs-3 fw-semibold mt-3 mb-0 text-primary">
-                      $250
-                    </h2>
-                    <p class="text-muted">Complete Service</p>
-                    <hr />
-                  </div>
-                  <ul class="list-group list-group-flush fs-5 mb-3 vstack">
-                    <li class="list-group-item ps-0 border-0">
-                      <h6 class="bi bi-check2 text-muted">Graphic Design</h6>
-                    </li>
-                    <li class="list-group-item ps-0 border-0">
-                      <h6 class="bi bi-check2 text-muted">Web Design</h6>
-                    </li>
-                    <li class="list-group-item ps-0 border-0">
-                      <h6 class="bi bi-check2 text-muted">UI/UX</h6>
-                    </li>
-                    <li class="list-group-item ps-0 border-0">
-                      <h6 class="bi bi-check2 text-muted">SEO Marketing</h6>
-                    </li>
-                  </ul>
-                  <button class="btn btn-light">Choose Plan</button>
+          </div>
+          <div class="col-md-4">
+            <div class="card pricing__card">
+              <div class="card-body">
+                <div>
+                  <h4 class="pricing__card-title">Premium</h4>
+                  <h2 class="pricing__amount">$350</h2>
+                  <p class="pricing__card-subtitle">Complete Service</p>
+                  <hr />
                 </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card border-0 shadow-sm bg-light">
-                <div class="card-body p-4">
-                  <div>
-                    <h4 class="section-subtitle display-6 fs-3 mb-0 text-muted">
-                      Premium
-                    </h4>
-                    <h2 class="fs-3 fw-semibold mt-3 mb-0 text-primary">
-                      $350
-                    </h2>
-                    <p class="text-muted">Complete Service</p>
-                    <hr />
-                  </div>
-                  <ul class="list-group list-group-flush fs-5 mb-3 vstack">
-                    <li class="list-group-item ps-0 border-0">
-                      <h6 class="bi bi-check2 text-muted">Graphic Design</h6>
-                    </li>
-                    <li class="list-group-item ps-0 border-0">
-                      <h6 class="bi bi-check2 text-muted">Web Design</h6>
-                    </li>
-                    <li class="list-group-item ps-0 border-0">
-                      <h6 class="bi bi-check2 text-muted">UI/UX</h6>
-                    </li>
-                    <li class="list-group-item ps-0 border-0">
-                      <h6 class="bi bi-check2 text-muted">SEO Marketing</h6>
-                    </li>
-                  </ul>
-                  <button class="btn btn-light">Choose Plan</button>
-                </div>
+                <ul class="list-group list-group-flush fs-5 mb-3 vstack">
+                  <li class="list-group-item ps-0 border-0">
+                    <h6 class="bi bi-check2 text-muted">Graphic Design</h6>
+                  </li>
+                  <li class="list-group-item ps-0 border-0">
+                    <h6 class="bi bi-check2 text-muted">Web Design</h6>
+                  </li>
+                  <li class="list-group-item ps-0 border-0">
+                    <h6 class="bi bi-check2 text-muted">UI/UX</h6>
+                  </li>
+                  <li class="list-group-item ps-0 border-0">
+                    <h6 class="bi bi-check2 text-muted">SEO Marketing</h6>
+                  </li>
+                </ul>
+                <button class="btn btn-light">Choose Plan</button>
               </div>
             </div>
           </div>
@@ -573,52 +562,52 @@
     </section>
 
     <!-- Testmonials -->
-    <section id="testmonial" class="py-6">
-      <div class="container">
-        <div>
-          <div class="text-center">
-            <h6 class="section-title lead">Testmonial</h6>
-            <div>
-              <p class="section-subtitle display-6 mb-0">
-                Client Say Something
-              </p>
-              <div class="d-flex justify-content-center">
+    <section id="testmonial" class="testmonial">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <header>
+              <h6 class="testmonial__title">Testmonial</h6>
+              <p class="testmonial__subtitle display-6">Client Say Something</p>
+              <div class="merged-center-underline">
                 <hr class="custom-underline" />
                 <hr class="custom-dashed-underline" />
               </div>
-            </div>
+            </header>
           </div>
-          <br />
-          <div id="carouselIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselIndicators"
-                data-bs-slide-to="0"
-                class="active bg-primary me-3"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-                class="bg-primary me-3"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselIndicators"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-                class="bg-primary me-3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active mb-6">
-                <div class="row g-6 justify-content-between">
-                  <div class="col-lg-6">
-                    <div class="border-0">
+        </div>
+
+        <br />
+
+        <div class="row">
+          <div class="col-md-12">
+            <div id="carouselIndicators" class="carousel slide">
+              <div class="carousel-indicators testmonial__carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active mb-6">
+                  <div class="row g-6 justify-content-between">
+                    <div class="col-lg-6">
                       <div class="d-flex align-items-center">
                         <div class="image-container">
                           <img
@@ -627,12 +616,17 @@
                             alt="Maria headshot image"
                           />
                         </div>
-                        <div class="ms-3">
+                        <div class="text-start ms-3">
                           <div class="d-flex gap-1 justify-content-between">
                             <div>
                               <p class="testimonial-author mb-1">
                                 Maria De Almeida
                               </p>
+                              <h6
+                                class="testimonial-job text-muted fw-light mb-3"
+                              >
+                                Developer & Freelancer
+                              </h6>
                             </div>
                             <div class="d-flex py-2">
                               <i
@@ -657,9 +651,7 @@
                               ></i>
                             </div>
                           </div>
-                          <h6 class="testimonial-job text-muted fw-light mb-3">
-                            Developer & Freelancer
-                          </h6>
+
                           <blockquote class="testimonial">
                             <p class="testimonial-text mb-0 text-muted">
                               Lorem ipsum dolor sit amet consectetur adipisicing
@@ -669,278 +661,293 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="border-0">
-                      <div class="d-flex align-items-center">
-                        <div class="image-container">
-                          <img
-                            src="images/maria.jpg"
-                            class="img-fluid"
-                            alt="Maria headshot image"
-                          />
-                        </div>
-                        <div class="ms-3">
-                          <div class="d-flex gap-1 justify-content-between">
-                            <div>
-                              <p class="testimonial-author mb-1">
-                                Maria De Almeida
-                              </p>
-                            </div>
-                            <div class="d-flex py-2">
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                            </div>
+                    <div class="col-lg-6">
+                      <div class="border-0">
+                        <div class="d-flex align-items-center">
+                          <div class="image-container">
+                            <img
+                              src="images/maria.jpg"
+                              class="img-fluid"
+                              alt="Maria headshot image"
+                            />
                           </div>
-                          <h6 class="testimonial-job text-muted fw-light mb-3">
-                            Developer & Freelancer
-                          </h6>
-                          <blockquote class="testimonial">
-                            <p class="testimonial-text mb-0 text-muted">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Ratione quaerat.
-                            </p>
-                          </blockquote>
+                          <div class="text-start ms-3">
+                            <div class="d-flex gap-1 justify-content-between">
+                              <div>
+                                <p class="testimonial-author mb-1">
+                                  Maria De Almeida
+                                </p>
+                                <h6
+                                  class="testimonial-job text-muted fw-light mb-3"
+                                >
+                                  Developer & Freelancer
+                                </h6>
+                              </div>
+                              <div class="d-flex py-2">
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                              </div>
+                            </div>
+
+                            <blockquote class="testimonial">
+                              <p class="testimonial-text mb-0 text-muted">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ratione quaerat.
+                              </p>
+                            </blockquote>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="carousel-item mb-6">
-                <div class="row g-6 justify-content-between">
-                  <div class="col-lg-6">
-                    <div class="border-0">
-                      <div class="d-flex align-items-center">
-                        <div class="image-container">
-                          <img
-                            src="images/maria.jpg"
-                            class="img-fluid"
-                            alt="Maria headshot image"
-                          />
-                        </div>
-                        <div class="ms-3">
-                          <div class="d-flex gap-1 justify-content-between">
-                            <div>
-                              <p class="testimonial-author mb-1">
-                                Maria De Almeida
-                              </p>
-                            </div>
-                            <div class="d-flex py-2">
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                            </div>
+                <div class="carousel-item mb-6">
+                  <div class="row g-6 justify-content-between">
+                    <div class="col-lg-6">
+                      <div class="border-0">
+                        <div class="d-flex align-items-center">
+                          <div class="image-container">
+                            <img
+                              src="images/maria.jpg"
+                              class="img-fluid"
+                              alt="Maria headshot image"
+                            />
                           </div>
-                          <h6 class="testimonial-job text-muted fw-light mb-3">
-                            Developer & Freelancer
-                          </h6>
-                          <blockquote class="testimonial">
-                            <p class="testimonial-text mb-0 text-muted">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Ratione quaerat.
-                            </p>
-                          </blockquote>
+                          <div class="text-start ms-3">
+                            <div class="d-flex gap-1 justify-content-between">
+                              <div>
+                                <p class="testimonial-author mb-1">
+                                  Maria De Almeida
+                                </p>
+                                <h6
+                                  class="testimonial-job text-muted fw-light mb-3"
+                                >
+                                  Developer & Freelancer
+                                </h6>
+                              </div>
+                              <div class="d-flex py-2">
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                              </div>
+                            </div>
+
+                            <blockquote class="testimonial">
+                              <p class="testimonial-text mb-0 text-muted">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ratione quaerat.
+                              </p>
+                            </blockquote>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="border-0">
-                      <div class="d-flex align-items-center">
-                        <div class="image-container">
-                          <img
-                            src="images/maria.jpg"
-                            class="img-fluid"
-                            alt="Maria headshot image"
-                          />
-                        </div>
-                        <div class="ms-3">
-                          <div class="d-flex gap-1 justify-content-between">
-                            <div>
-                              <p class="testimonial-author mb-1">
-                                Maria De Almeida
-                              </p>
+                    <div class="col-lg-6">
+                      <div class="border-0">
+                        <div class="d-flex align-items-center">
+                          <div class="image-container">
+                            <img
+                              src="images/maria.jpg"
+                              class="img-fluid"
+                              alt="Maria headshot image"
+                            />
+                          </div>
+                          <div class="text-start ms-3">
+                            <div class="d-flex gap-1 justify-content-between">
+                              <div>
+                                <p class="testimonial-author mb-1">
+                                  Maria De Almeida
+                                </p>
+                                <h6
+                                  class="testimonial-job text-muted fw-light mb-3"
+                                >
+                                  Developer & Freelancer
+                                </h6>
+                              </div>
+
+                              <div class="d-flex py-2">
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                              </div>
                             </div>
 
-                            <div class="d-flex py-2">
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                            </div>
+                            <blockquote class="testimonial">
+                              <p class="testimonial-text mb-0 text-muted">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ratione quaerat.
+                              </p>
+                            </blockquote>
                           </div>
-                          <h6 class="testimonial-job text-muted fw-light mb-3">
-                            Developer & Freelancer
-                          </h6>
-                          <blockquote class="testimonial">
-                            <p class="testimonial-text mb-0 text-muted">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Ratione quaerat.
-                            </p>
-                          </blockquote>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="carousel-item mb-6">
-                <div class="row g-6 justify-content-between">
-                  <div class="col-lg-6">
-                    <div class="border-0">
-                      <div class="d-flex align-items-center">
-                        <div class="image-container">
-                          <img
-                            src="images/maria.jpg"
-                            class="img-fluid"
-                            alt="Maria headshot image"
-                          />
-                        </div>
-                        <div class="ms-3">
-                          <div class="d-flex gap-1 justify-content-between">
-                            <div>
-                              <p class="testimonial-author mb-1">
-                                Maria De Almeida
-                              </p>
-                            </div>
-                            <div class="d-flex py-2">
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                            </div>
+                <div class="carousel-item mb-6">
+                  <div class="row g-6 justify-content-between">
+                    <div class="col-lg-6">
+                      <div class="border-0">
+                        <div class="d-flex align-items-center">
+                          <div class="image-container">
+                            <img
+                              src="images/maria.jpg"
+                              class="img-fluid"
+                              alt="Maria headshot image"
+                            />
                           </div>
-                          <h6 class="testimonial-job text-muted fw-light mb-3">
-                            Developer & Freelancer
-                          </h6>
-                          <blockquote class="testimonial">
-                            <p class="testimonial-text mb-0 text-muted">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Ratione quaerat.
-                            </p>
-                          </blockquote>
+                          <div class="text-start ms-3">
+                            <div class="d-flex gap-1 justify-content-between">
+                              <div>
+                                <p class="testimonial-author mb-1">
+                                  Maria De Almeida
+                                </p>
+                                <h6
+                                  class="testimonial-job text-muted fw-light mb-3"
+                                >
+                                  Developer & Freelancer
+                                </h6>
+                              </div>
+                              <div class="d-flex py-2">
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                              </div>
+                            </div>
+
+                            <blockquote class="testimonial">
+                              <p class="testimonial-text mb-0 text-muted">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ratione quaerat.
+                              </p>
+                            </blockquote>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="border-0">
-                      <div class="d-flex align-items-center">
-                        <div class="image-container">
-                          <img
-                            src="images/maria.jpg"
-                            class="img-fluid"
-                            alt="Maria headshot image"
-                          />
-                        </div>
-                        <div class="ms-3">
-                          <div class="d-flex gap-1 justify-content-between">
-                            <div>
-                              <p class="testimonial-author mb-1">
-                                Maria De Almeida
-                              </p>
+                    <div class="col-lg-6">
+                      <div class="border-0">
+                        <div class="d-flex align-items-center">
+                          <div class="image-container">
+                            <img
+                              src="images/maria.jpg"
+                              class="img-fluid"
+                              alt="Maria headshot image"
+                            />
+                          </div>
+                          <div class="text-start ms-3">
+                            <div class="d-flex gap-1 justify-content-between">
+                              <div>
+                                <p class="testimonial-author mb-1">
+                                  Maria De Almeida
+                                </p>
+                                <h6
+                                  class="testimonial-job text-muted fw-light mb-3"
+                                >
+                                  Developer & Freelancer
+                                </h6>
+                              </div>
+
+                              <div class="d-flex py-2">
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                                <i
+                                  class="fa-solid fa-star fa-xs"
+                                  style="color: #e7b018"
+                                ></i>
+                              </div>
                             </div>
 
-                            <div class="d-flex py-2">
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                              <i
-                                class="fa-solid fa-star fa-xs"
-                                style="color: #e7b018"
-                              ></i>
-                            </div>
+                            <blockquote class="testimonial">
+                              <p class="testimonial-text mb-0 text-muted">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ratione quaerat.
+                              </p>
+                            </blockquote>
                           </div>
-                          <h6 class="testimonial-job text-muted fw-light mb-3">
-                            Developer & Freelancer
-                          </h6>
-                          <blockquote class="testimonial">
-                            <p class="testimonial-text mb-0 text-muted">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Ratione quaerat.
-                            </p>
-                          </blockquote>
                         </div>
                       </div>
                     </div>
@@ -954,50 +961,50 @@
     </section>
 
     <!-- Stats -->
-    <section id="stats" class="bg-dark py-4">
-      <div class="container py-2">
+    <section id="stats" class="stats bg-dark py-4">
+      <div class="container text-center py-2">
         <div class="row">
           <div class="col-lg-3 col-md-6">
-            <div class="d-flex gap-3 align-items-center">
+            <div class="stats__content">
               <div>
                 <i class="fa-regular fa-circle-check"></i>
               </div>
               <div>
-                <h2 class="fw-semibold text-primary mb-0">123+</h2>
-                <p class="text-muted mb-0">Projects Completed</p>
+                <h2 class="stats__number">123+</h2>
+                <p class="stats__description">Projects Completed</p>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <div class="d-flex gap-3 align-items-center">
+            <div class="stats__content">
               <div>
                 <i class="fa-regular fa-user-group"></i>
               </div>
               <div>
-                <h2 class="fw-semibold text-primary mb-0">70</h2>
-                <p class="text-muted mb-0">Satisfied Client</p>
+                <h2 class="stats__number">70</h2>
+                <p class="stats__description">Satisfied Client</p>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <div class="d-flex gap-3 align-items-center">
+            <div class="stats__content">
               <div>
                 <i class="fa-regular fa-shield"></i>
               </div>
               <div>
-                <h2 class="fw-semibold text-primary mb-0">15</h2>
-                <p class="text-muted mb-0">Active Projects</p>
+                <h2 class="stats__number">15</h2>
+                <p class="stats__description">Active Projects</p>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <div class="d-flex gap-3 align-items-center">
+            <div class="stats__content">
               <div>
                 <i class="fa-regular fa-handshake"></i>
               </div>
               <div>
-                <h2 class="fw-semibold text-primary mb-0">35</h2>
-                <p class="text-muted mb-0">Teams Members</p>
+                <h2 class="stats__number">35</h2>
+                <p class="stats__description">Teams Members</p>
               </div>
             </div>
           </div>
@@ -1006,120 +1013,120 @@
     </section>
 
     <!-- Experience -->
-    <section id="experience" class="py-6">
-      <div class="container">
-        <div>
-          <div class="text-center">
-            <h6 class="section-title lead">Experience</h6>
-            <div>
-              <p class="section-subtitle display-6 mb-0">Work Experience</p>
-              <div class="d-flex justify-content-center">
+    <section id="experience" class="experience">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <header>
+              <h6 class="experience__title">Experience</h6>
+              <p class="experience__subtitle display-6">Work Experience</p>
+              <div class="merged-center-underline">
                 <hr class="custom-underline" />
                 <hr class="custom-dashed-underline" />
               </div>
-            </div>
+            </header>
           </div>
-          <br />
+        </div>
 
-          <div class="row mb-4">
-            <div class="col-md-5">
-              <div class="card mb-4 border-0 shadow-sm bg-primary">
-                <div class="card-body p-4">
-                  <p class="text-light">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Unde, molestias rem iusto explicabo assumenda aspernatur
-                    illo minima
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div class="vertical"></div>
-            </div>
-            <div class="col-md-5">
-              <div class="card mb-4 border-0 shadow-none bg-light">
-                <div class="card-body p-4">
-                  <p class="h4 tex-center fw-semibold mb-1">Machine Engineer</p>
-                  <h4 class="h6 fw-semibold text-primary">
-                    Alvac Company Limited
-                  </h4>
-                  <p class="text-secondary">March 2019 - August 2019</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-5">
-              <div class="card mb-4 border-0 shadow-none bg-light">
-                <div class="card-body p-4">
-                  <p class="h4 tex-center fw-semibold mb-1">Mobile Developer</p>
-                  <h4 class="h6 fw-semibold text-primary">Cavidel Limited</h4>
-                  <p class="text-secondary">March 2020 - August 2020</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div class="vertical"></div>
-            </div>
-            <div class="col-md-5">
-              <div class="card mb-4 border-0 shadow-sm bg-light">
-                <div class="card-body p-4">
-                  <p class="text-secondary">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Unde, molestias rem iusto explicabo assumenda aspernatur
-                    illo minima
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-5">
-              <div class="card mb-4 border-0 shadow-sm bg-light">
-                <div class="card-body p-4">
-                  <p class="text-secondary">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Unde, molestias rem iusto explicabo assumenda aspernatur
-                    illo minima
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div class="vertical"></div>
-            </div>
-            <div class="col-md-5">
-              <div class="card mb-4 border-0 shadow-none bg-light">
-                <div class="card-body p-4">
-                  <p class="h4 tex-center fw-semibold mb-1">
-                    Software Engineer
-                  </p>
-                  <h4 class="h6 fw-semibold text-primary">LightHause-eko</h4>
-                  <p class="text-secondary">March 2022 - Present</p>
-                </div>
+        <br />
+
+        <div class="row mb-4">
+          <div class="col-md-5">
+            <div class="card mb-4 border-0 shadow-sm bg-primary">
+              <div class="card-body p-4">
+                <p class="text-light">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Unde, molestias rem iusto explicabo assumenda aspernatur illo
+                  minima
+                </p>
               </div>
             </div>
           </div>
-          <div class="hire-me-box bg">
-            <div class="row g-2">
-              <div class="col-md-8">
-                <p class="display-6 fs-2 fw-medium text-white mb-0">
-                  Have Any Project in Mind
-                </p>
-                <div class="d-flex">
-                  <hr class="custom-underline" style="border-color: white" />
-                  <hr
-                    class="custom-dashed-underline"
-                    style="border-color: white"
-                  />
-                </div>
-                <p class="text-dark mb-0">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
-                  totam molestias sed voluptate possimus numquam ipsam
-                  reiciendis maxime.
+          <div class="col-md-2">
+            <div class="vertical"></div>
+          </div>
+          <div class="col-md-5">
+            <div class="card mb-4 border-0 shadow-none bg-light">
+              <div class="card-body p-4">
+                <p class="h4 text-center fw-semibold mb-1">Machine Engineer</p>
+                <h4 class="h6 fw-semibold text-primary">
+                  Alvac Company Limited
+                </h4>
+                <p class="text-secondary">March 2019 - August 2019</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="card mb-4 border-0 shadow-none bg-light">
+              <div class="card-body p-4">
+                <p class="h4 tex-center fw-semibold mb-1">Mobile Developer</p>
+                <h4 class="h6 fw-semibold text-primary">Cavidel Limited</h4>
+                <p class="text-secondary">March 2020 - August 2020</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="vertical"></div>
+          </div>
+          <div class="col-md-5">
+            <div class="card mb-4 border-0 shadow-sm bg-light">
+              <div class="card-body p-4">
+                <p class="text-secondary">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Unde, molestias rem iusto explicabo assumenda aspernatur illo
+                  minima
                 </p>
               </div>
-              <div class="col-md-4 d-flex justify-content-center">
-                <div class="align-self-center">
-                  <button class="btn btn-light">HIRE ME</button>
-                </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="card mb-4 border-0 shadow-sm bg-light">
+              <div class="card-body p-4">
+                <p class="text-secondary">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Unde, molestias rem iusto explicabo assumenda aspernatur illo
+                  minima
+                </p>
               </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="vertical"></div>
+          </div>
+          <div class="col-md-5">
+            <div class="card mb-4 border-0 shadow-none bg-light">
+              <div class="card-body p-4">
+                <p class="h4 tex-center fw-semibold mb-1">Software Engineer</p>
+                <h4 class="h6 fw-semibold text-primary">LightHause-eko</h4>
+                <p class="text-secondary">March 2022 - Present</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row hire-me-box g-2">
+          <div class="col-md-8">
+            <div class="text-container text-start">
+              <p class="display-6 fs-2 fw-medium text-white mb-0">
+                Have Any Project in Mind
+              </p>
+              <div class="d-flex">
+                <hr class="custom-underline" style="border-color: white" />
+                <hr
+                  class="custom-dashed-underline"
+                  style="border-color: white"
+                />
+              </div>
+              <p class="text-dark mb-0">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+                totam molestias sed voluptate possimus numquam ipsam reiciendis
+                maxime.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="align-self-center">
+              <button class="btn btn-light">HIRE ME</button>
             </div>
           </div>
         </div>
@@ -1127,7 +1134,7 @@
     </section>
 
     <!-- Socials -->
-    <div class="socials2 bg-dark pt-4 pb-2">
+    <section class="socials2 bg-dark pt-4 pb-2">
       <div class="container">
         <div class="row">
           <div class="col-md-8 offset-md-2 text-center">
@@ -1154,34 +1161,38 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer border-top bg-dark pt-2 pb-2">
       <div class="container text-center">
-        <ul class="nav d-flex justify-content-center">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about-us" class="nav-link">About us</a>
-          </li>
-          <li class="nav-item">
-            <a href="#services" class="nav-link">Service</a>
-          </li>
-          <li class="nav-item">
-            <a href="#portfolio" class="nav-link">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a href="#pricing" class="nav-link">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Contact Us</a>
-          </li>
-        </ul>
-        <p class="text-muted">
-          Copyright &copy; 2023 | Designed by Ademola Akanmu
-        </p>
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav d-flex justify-content-center">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about-us" class="nav-link">About us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-link">Service</a>
+              </li>
+              <li class="nav-item">
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#pricing" class="nav-link">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact Us</a>
+              </li>
+            </ul>
+            <p class="text-muted">
+              Copyright &copy; 2023 | Designed by Ademola Akanmu
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
 
